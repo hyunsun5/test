@@ -24,7 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
-const { sequelize } = require('./models');
+/*const { sequelize } = require('./models');
 
 sequelize.sync({ force: false })
 .then(() => {
@@ -32,7 +32,7 @@ sequelize.sync({ force: false })
 })
 .catch((err) => {
     console.error(err);
-});
+});*/
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -40,7 +40,7 @@ app.use(function(req, res, next) {
 });
 
 //서버를 실행하는 파일
-const { sequelize } = require('./models');
+//const { sequelize } = require('./models');
 
 sequelize.sync({ force: false })
 .then(() => {
