@@ -1,5 +1,5 @@
 const User = require("./User");
-const Company = require("./Company");
+//const Company = require("./Company");
 
 module.exports = (sequelize, DataTypes) => {
 
